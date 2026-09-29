@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos e Doações - ONG Esperança</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header>
+        <h1>Projetos e Doações</h1>
+        <p>Conheça as nossas iniciativas e ajude-nos a transformar vidas.</p>
+    </header>
+
+    <nav aria-label="Navegação principal">
+        <div class="nav-container">
+            <details class="nav-menu" open>
+                <summary class="menu-icon"><span class="visually-hidden">Menu principal</span><span aria-hidden="true">&#9776;</span></summary>
+                <ul>
+                <li><a href="index.html" data-link>Início</a></li>
+                <li class="nav-dropdown">
+                    <a href="projetos.html" data-link aria-current="page">Projetos e Doações &#9662;</a>
+                    <ul class="submenu">
+                        <li><a href="projetos.html#campanhas-ativas" data-link>Campanhas Ativas</a></li>
+                        <li><span class="nav-unavailable" aria-disabled="true">Doações Recorrentes</span></li>
+                        <li><span class="nav-unavailable" aria-disabled="true">Transparência</span></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html" data-link>Cadastro</a></li>
+                </ul>
+            </details>
+        </div>
+    </nav>
+
+    <main id="conteudo" tabindex="-1">
+        <section class="projetos-destaque" id="campanhas-ativas">
+            <h2>Campanhas Ativas</h2>
+            <div class="alert-info-box">
+                <h3>Informação Importante</h3>
+                <p>Todas as doações realizadas são convertidas diretamente em melhorias estruturais e compra de materiais para os projetos da ONG.</p>
+            </div>
+            <p class="availability-note" id="doacao-indisponivel">Doações online ainda não estão disponíveis.</p>
+
+            <div class="grid-container">
+                <article class="card-projeto">
+                    <span class="badge badge-success">Campanha Ativa</span>
+                    <h3>Inclusão Digital Jovem</h3>
+                    <p>Fornecemos computadores e aulas de programação para jovens em situação de vulnerabilidade.</p>
+                    <p><strong>Meta:</strong> R$ 15.000</p>
+                    <button type="button" disabled aria-describedby="doacao-indisponivel">Doar Agora</button>
+                </article>
+
+                <article class="card-projeto">
+                    <span class="badge badge-success">Campanha Ativa</span>
+                    <h3>Cestas Básicas Mensais</h3>
+                    <p>Garantimos a segurança alimentar de 50 famílias cadastradas no nosso programa de apoio.</p>
+                    <p><strong>Meta:</strong> R$ 8.000</p>
+                    <button type="button" disabled aria-describedby="doacao-indisponivel">Doar Agora</button>
+                </article>
+
+                <article class="card-projeto">
+                    <span class="badge badge-success">Campanha Ativa</span>
+                    <h3>Reforma da Biblioteca</h3>
+                    <p>Ajude-nos a comprar novos livros e a estruturar um ambiente de leitura adequado e acolhedor.</p>
+                    <p><strong>Meta:</strong> R$ 5.000</p>
+                    <button type="button" disabled aria-describedby="doacao-indisponivel">Doar Agora</button>
+                </article>
+
+                <article class="card-projeto">
+                    <span class="badge badge-success">Campanha Ativa</span>
+                    <h3>Oficinas de Arte</h3>
+                    <p>Materiais para aulas semanais de pintura e teatro, estimulando a criatividade infantil.</p>
+                    <p><strong>Meta:</strong> R$ 3.000</p>
+                    <button type="button" disabled aria-describedby="doacao-indisponivel">Doar Agora</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ONG Esperança. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

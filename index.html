@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Esperança</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header>
+        <h1 id="header-title">ONG Esperança</h1>
+        <p id="header-subtitle">Transformando vidas através da educação e tecnologia.</p>
+    </header>
+
+    <nav aria-label="Navegação principal">
+        <div class="nav-container">
+            <details class="nav-menu" open>
+                <summary class="menu-icon"><span class="visually-hidden">Menu principal</span><span aria-hidden="true">&#9776;</span></summary>
+                <ul>
+                <li><a href="index.html" data-link>Início</a></li>
+                <li class="nav-dropdown">
+                    <a href="projetos.html" data-link>Projetos e Doações &#9662;</a>
+                    <ul class="submenu">
+                        <li><a href="projetos.html#campanhas-ativas" data-link>Campanhas Ativas</a></li>
+                        <li><span class="nav-unavailable" aria-disabled="true">Doações Recorrentes</span></li>
+                        <li><span class="nav-unavailable" aria-disabled="true">Transparência</span></li>
+                    </ul>
+                </li>
+                <li><a href="cadastro.html" data-link>Cadastro</a></li>
+                </ul>
+            </details>
+        </div>
+    </nav>
+
+    <!-- O CONTEÚDO DINÂMICO SERÁ INJETADO AQUI -->
+    <main id="conteudo" tabindex="-1">
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ONG Esperança. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- type="module" é essencial para a SPA funcionar modularizada -->
+    <script src="https://unpkg.com/imask"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
